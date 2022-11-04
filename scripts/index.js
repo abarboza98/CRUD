@@ -1,3 +1,13 @@
-let POSTNombre = document.getElementById('');
+function showList(array) {
+  let contentToAppend = '';
 
-document.addEventListener('DOMContentLoaded', () => {});
+  for (let i = 0; i < array.length; i++) {
+    contentToAppend = `
+        <ul>ID: ${array.id}</ul>
+        <ul>Nombre: ${array.name}</ul>
+        <ul>Apellido: ${array.lastname}</ul>
+    `;
+
+    document.getElementById('results').innerHTML += contentToAppend;
+  }
+}
