@@ -13,8 +13,7 @@ fetch("https://63653a20046eddf1bae8ee0e.mockapi.io/users")
   .then((data) => {
 
       dataList = data;
-      console.log(dataList)
-      
+
       showList(dataList);
 
   });

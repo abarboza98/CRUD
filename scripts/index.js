@@ -13,7 +13,6 @@ function showList(array) {
     `;
 
     document.getElementById('results').innerHTML += contentToAppend;
-    console.log(contentToAppend)
   }
 }
 
