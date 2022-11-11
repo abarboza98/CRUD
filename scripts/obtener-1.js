@@ -1,10 +1,20 @@
-let id = document.getElementById('inputGet1Id').value;
-let URL = `https://63653a20046eddf1bae8ee0e.mockapi.io/users/${id}`;
+let URL = `https://63653a20046eddf1bae8ee0e.mockapi.io/users/`;
+let currentArray = [];
+let filtredArray = [];
 
 document.addEventListener('DOMContentLoaded', () => {
-  fetch(URL)
-    .then((response) => response.json())
-    .then((data) => console.log(data));
+  document.getElementById('btnGet1').addEventListener('click', () => {
+    let id = document.getElementById('inputGet1Id').value;
+    fetch(URL + id)
+      .then((response) => response.json())
+      .then((data) => {
+        currentArray = data;
+        if (id === '') {
+          showList(currentArray);
+        } else {
+          showList([currentArray]);
+          console.log(currentArray);
+        }
+      });
+  });
 });
-
-document.getElementById('');
