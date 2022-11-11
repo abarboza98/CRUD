@@ -2,13 +2,11 @@
 
 let dataList = [];
 
-let results = document.getElementById("results");
+let results = document.getElementById('results');
 
+//document.addEventListener("DOMContentLoaded", () => {
 
-
-document.addEventListener("DOMContentLoaded", () => {
-
-fetch("https://63653a20046eddf1bae8ee0e.mockapi.io/users")
+/*fetch("https://63653a20046eddf1bae8ee0e.mockapi.io/users")
   .then((response) => response.json())
   .then((data) => {
 
@@ -16,6 +14,6 @@ fetch("https://63653a20046eddf1bae8ee0e.mockapi.io/users")
 
       showList(dataList);
 
-  });
+  });*/
 
-})
+//})
