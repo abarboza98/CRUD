@@ -1,8 +1,8 @@
 // https://63653a20046eddf1bae8ee0e.mockapi.io/users
 
-let dataList = [];
+//let dataList = [];
 
-let results = document.getElementById('results');
+//let results = document.getElementById('results');
 
 //document.addEventListener("DOMContentLoaded", () => {
 
